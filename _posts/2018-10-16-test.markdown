@@ -1,8 +1,19 @@
 ---
-title:  "Welcome to Jekyll!"
-date:   2013-11-08 19:55:16
+title:  "install cv2 module in python by pip(python에서 cv2 사용하기)"
+date:   2018-10-26 21:32:16
 categories: jekyll update
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+The reason why I made github blog is cv2 module.  
+I often used to bulid the environment(using miniconda).  
+However, I always forget how to install some modules.  
+So I'm writing ths post!  
+
+
+
+내가 github blog를 만든 이유는 이 cv2 모듈 때문이다.  
+어쩌다보니 환경 구축을 새로 자주 해야할 때가 있는데, 그 때마다 애먹는 모듈이 꼭 있었음.  
+물론 그 중에 하나가 cv2였다.  
+적어놓고 절대 다시 구글링하지 말아야지...  
+
+>  pip install opencv-python
