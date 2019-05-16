@@ -1,0 +1,35 @@
+---
+layout : post
+title:  "ubuntu에 graphic driver 설치하기 (무한 로그인)"
+comments : "true"
+---
+
+### NVIDIA 그래픽 설치하기
+ubuntu 16.04 버전에 nvidia graphic driver를 설치하는 방법입니다.
+
+
+> sudo apt-get-repository ppa:graphics-drivers/ppa
+> sudo apt-get update
+> sudo apt-get install nvidia-버전
+
+
+다 설치를 한 뒤 로그아웃 후 재로그인 해서 그래픽 카드가 설치되었는지 봐야합니다.
+그런데 간혹 로그인이 안되고 무한 로그인 상태에 빠져버릴 수도 있습니다.
+
+** Signature not signed with a trusted key** 라는 문장과 함께..
+
+
+다른 블로그를 찾아보면 ctrl + alt + F1으로 tty를 변경해서 로그인 하라던데..  
+저는 tty 레벨을 아무리 변경해봐도 저 공포의 문장이 계속 뜨더라고요.  
+로그인도 할 수 없을 만큼...  
+그래서 날리고 재설치 했습니다 ^.^  
+
+저와 같은 공포의 상황이 생기지 않은 분들은 tty 변경해서 들어가신 후,  
+로그인 한 뒤 reboot 시켜주시면 됩니다.  
+
+재부팅 후 로그인 하시면 말끔한 해상도의 우분투 배경화면이 기다리고 있습니다.  
+
+
+
+**참고 사이트**
+<https://kkkjerry.github.io/ubuntu/2016/09/08/CUDA/>
