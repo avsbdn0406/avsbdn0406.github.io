@@ -1,14 +1,8 @@
 ---
 title:  "install cv2 module in python by pip(python에서 cv2 사용하기)"
 date:   2018-10-26 21:32:16
-categories: jekyll update
+categories: Programming
 ---
-
-The reason why I made github blog is cv2 module.  
-I often used to bulid the environment(using miniconda).  
-However, I always forget how to install some modules.  
-So I'm writing ths post!  
-
 
 
 내가 github blog를 만든 이유는 이 cv2 모듈 때문이다.  

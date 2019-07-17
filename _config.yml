@@ -3,6 +3,7 @@ author: JaeEun Yoo
 baseurl:
 description:
 github: http://www.github.com/avsbdn0406
+url : https://avsbdn0406.github.io/
 
 email: avsbdn1226@bme.gachon.ac.kr
 
@@ -12,6 +13,20 @@ email: avsbdn1226@bme.gachon.ac.kr
 
 markdown: kramdown
 
+paginate : 10
+# 고정주소
+permalink : /:title
+
+navigation:
+  -title : Programming
+  url : /post.html
+  -title : PET
+  url : /PET.html
+  -title : Linux
+  url : /Linux.html
+
+disqus : true
+disqus_shortname : julie
 
 defaults:
   - scope:
@@ -25,12 +40,7 @@ defaults:
     values:
       layout: "post"
   - scope:
-      path: ""
-      type: "PET"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "Linux"
+      path: "/linux"
+      type: "posts"
     values:
       layout: "post"

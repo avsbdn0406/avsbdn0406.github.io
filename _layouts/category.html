@@ -1,21 +1,23 @@
 ---
 layout: default
 ---
+
 <div class="container">
   <div id="article">
-  <h1>Programming</h1>
-    <ul class="posts-list">
-
       {% assign category = page.category | default: page.title %}
       {% for post in site.categories[category] %}
+        <h1>{{category}}</h1>
+          <ul class="posts-list">
         <li>
           <h3>
             <a href="{{ site.baseurl }}{{ post.url }}">
               {{ post.title }}
-            </a>
+            </a><b>
             <small>{{ post.date | date_to_string }}</small>
           </h3>
         </li>
       {% endfor %}
 
     </ul>
+  </div>
+</div>

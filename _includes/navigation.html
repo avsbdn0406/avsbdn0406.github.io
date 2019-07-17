@@ -11,9 +11,24 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
+        <header class="site-category">
+          <!--<ul>-->
+
+            {% assign pages_list = site.pages %}
+            {% for node in pages_list %}
+              {% if node.title != null %}
+                {% if node.layout == "category" %}
+                  <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+                  href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+        <!--</ul>-->
+        </header>
       <li><a href="{{ site.baseurl }}/post.html">Programming</a></li>
-      <li><a href="{{ site.baseurl }}/post.html">PET</a></li>
-      <li><a href="{{ site.baseurl }}/post.html">Linux</a></li>
+      <li><a href="{{ site.baseurl }}/PET.html">PET</a></li>
+      <li><a href="{{ site.baseurl }}/Linux.html">Linux</a></li>
       <li><a href="{{ site.baseurl }}/about.html">About</a></li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -25,10 +40,26 @@
   <ul class="sidebar-nav">
     <li class="sidebar-brand"><a href="{{ site.baseurl }}/"><h1 class="brand">{{ site.name }}</h1></a><h3>{{ site.description }}</h3></li>
     <hr />
+    <header class="site-category">
+      <!--<ul>-->
+
+        {% assign pages_list = site.pages %}
+        {% for node in pages_list %}
+          {% if node.title != null %}
+            {% if node.layout == "category" %}
+              <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+              href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+    <!--</ul>-->
+    </header>
+    <!--
     <li><a href="{{ site.baseurl }}/post.html">Programming</a></li>
     <li><a href="{{ site.baseurl }}/PET.html">PET</a></li>
     <li><a href="{{ site.baseurl }}/Linux.html">Linux</a></li>
-    <li><a href="{{ site.baseurl }}/about.html">About</a></li>
+    <li><a href="{{ site.baseurl }}/about.html">About</a></li>-->
     <hr />
     <div id="social-wrapper">
 
