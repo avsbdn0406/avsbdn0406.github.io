@@ -1,7 +1,7 @@
 ---
 title:  "install cv2 module in python by pip(python에서 cv2 사용하기)"
 date:   2018-10-26 21:32:16
-categories: Programming
+categories: Python
 ---
 
 
